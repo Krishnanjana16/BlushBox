@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Quicksand:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff8fab;
+  --color-secondary: #ffe5ec;
+  --color-accent: #fb6f92;
+  --color-peach: #ffb3c6;
+  --color-background-light: #fff0f5;
+  --color-background-dark: #2d1b24;
+  --color-text-main: #111827;
+  --color-babyblue: #A7C7E7;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-cute: "Quicksand", sans-serif;
+}
+
+@layer utilities {
+  .bg-pastel-gradient {
+    background: linear-gradient(135deg, #ffb6c1, #e6e6fa, #bde0fe, #ffdac1);
+    background-size: 300% 300%;
+    animation: gradient-animation 20s ease infinite;
+  }
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
